@@ -1,0 +1,93 @@
+\documentclass[overlapped,line,11pt]{res}
+\usepackage[colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            citecolor=blue]{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage[none]{hyphenat}
+\emergencystretch=1em
+\topmargin=-.64in
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textheight=11in
+\textwidth=6.62in
+\resumewidth=7.2in
+\hoffset=.5in
+\sectionwidth=0.5in
+\newsectionwidth{0in}
+\sectionskip=0.15in
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\renewcommand{\sectionfont}{\bf}
+
+\begin{document}
+
+\moveleft.5\hoffset\centerline{\huge\bf Jerry Duncan}
+\vspace{.2em}
+\moveleft.5\hoffset\centerline{Seattle, WA $|$ \href{mailto:jerry@jerryduncan.dev}{\uline{jerry@jerryduncan.dev}} $|$ \href{https://www.linkedin.com/in/jerry-duncan-dev}{\uline{linkedin.com/in/jerry-duncan-dev}}}
+\vspace{0.5em}
+
+\begin{resume}
+
+\section{\underline{EXPERIENCE}}
+\vspace{4pt}
+
+\textbf{ByteDance} $|$ Seattle, WA \hfill Q3 2023 -- Present\\
+{\sl Machine Learning Infrastructure Engineer (Platform Team)}
+\vspace{4pt}
+\begin{itemize} \itemsep 2pt
+  \item \textbf{Owned design and global rollout of async inference platform} on Kubernetes, sustaining 2k+ QPS and 100M+ monthly tasks; introduced a Mon/Thu release cadence with canary rollouts to reduce outage risk from Friday releases and improve on-call stability
+  \item \textbf{Directed GPU utilization strategy} via a scheduling service that cut idle time $\sim$30\% across clusters, reclaiming capacity for latency-critical workloads and significantly lowering cost-to-serve
+
+  \item \textbf{Drove reliability roadmap} by implementing global failover for inference dispatch, achieving 99.99\% availability and ensuring uninterrupted delivery for mission-critical TikTok ML features
+  \item \textbf{Built and scaled team capability} by onboarding 5 engineers, transferring ownership of high-availability serving systems, and establishing team practices that sustained long-term reliability across the team
+\end{itemize}
+
+
+\textbf{ByteDance} $|$ San Jose, CA (Remote) \hfill 2022 -- Q1 2024\\
+{\sl Machine Learning Optimization Engineer}
+\vspace{4pt}
+\begin{itemize} \itemsep 2pt
+  \item \textbf{Led optimization strategy for diffusion models}, delivering up to 4$\times$ faster train/infer and saving $\sim$10M GPU-hours; enabled TikTok generative features used in 100M+ creations
+  \item \textbf{Directed large-scale performance work on SDXL in collaboration with NVIDIA NeMo}, boosting throughput 4.7$\times$ on 1k+ A100s; earned an excellence award and drove multi-million \$ monthly savings
+  \item \textbf{Expanded compute capacity and efficiency at scale}, improving a 12k-GPU production run for MegaScale LLM MoE by 10\% and evaluating TPU migration across 256 devices to maintain continuity during global GPU shortages
+  \item \textbf{Recognized as a domain expert in ML optimization}, advising 100+ engineers on best practices for distributed training (FSDP, DeepSpeed, Megatron) and inference (ONNX, TensorRT), and owning the PhD intern pipeline, including resume screening, interviews, and final hiring decisions
+
+
+\end{itemize}
+
+
+\textbf{ByteDance} $|$ San Jose, CA (Remote) \hfill Summer 2021\\
+{\sl Software Engineering Intern — ML Systems}
+\vspace{4pt}
+\begin{itemize} \itemsep 2pt
+  \item \textbf{Enabled parameter-server scaling in PyTorch-based training framework} by extending it with BytePS distributed backend support, broadening capacity for ML researchers
+  \item \textbf{Improved training reliability and efficiency} by adding profiling, config validation, and early stopping, reducing misconfigurations and wasted compute
+\end{itemize}
+
+
+\section{\underline{TECHNICAL SKILLS}}
+\vspace{4pt}
+
+\textbf{Programming/Systems:} Python, C/C++, Go; Docker, Kubernetes; AWS, GCP, S3 \\
+\textbf{Distributed/Infra:} Kafka, Redis, RocketMQ; multi-region fault tolerance; async systems \\
+\textbf{ML Serving \& Infrastructure:} PyTorch internals, CUDA, NCCL, custom kernels, GPU scheduling; ONNX Runtime, TensorRT; quantization, distillation, compression; observability/monitoring, resiliency, canary deployments
+
+
+
+
+\section{\underline{EDUCATION}}
+\vspace{4pt}
+
+\textbf{University of Tennessee, Knoxville} \hfill 2016 – 2021 \\
+{\sl B.S. Computer Science, summa cum laude, 2019} \\
+{\sl M.S. Computer Science, summa cum laude, 2021}
+
+
+\section{\underline{PATENTS}}
+\vspace{4pt}
+{\sl Improving Task Execution and Resource Management} (U.S. Patent Application No. US 19/053098, pending)
+
+\end{resume}
+\end{document}
